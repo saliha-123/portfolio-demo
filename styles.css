@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Nanum Myeongjo', serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav h2 {
+    color: black;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.overlay{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: xx-large;
+}
+
+.overlay p{
+    font-size: medium;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    
+}
+
+header img{
+    width: 100%;
+    height: 600px;
+    opacity: 0.9;
+}
+
+h2{
+    text-align: center;
+    font-size: xx-large;
+    margin: 10px;
+}
+h2:hover{
+    text-shadow: 3px 4px 5px rgb(130, 126, 126);
+}
+section {
+    padding: 20px;
+}
+
+.pic{
+    display: flex;
+}
+.pic p{
+    text-align: justify;
+    margin: 30px;
+}
+
+.pic img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.timeline img{
+    width: 100%;
+}
+
+
+
+#works {
+    padding: 20px 0;
+}
+
+.work-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.work-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.work-description h4 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#awards {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.award-card {
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.award-card:hover{
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.award-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 4px solid #e6e6e6;
+    border-radius: 50%;
+}
+
+.award-card img:hover{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+
+
+.award-description p {
+    color: #666;
+    max-width: 500px;
+}
+
+#map{
+    width: 100%;
+}
+#v{
+    width: 374px;
+    margin: 3px;
+    height: 250px;
+}
+
+footer {
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for 400px devices */
+@media screen and (max-width:400px) {
+    nav{
+    width: 400px;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    }
+    .nav-links{
+        margin: 1px;
+    }
+}
